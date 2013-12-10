@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Busy" >
+
+   <TextView
+        android:id="@+id/busyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:text="Busy" />
+   
+   <!-- Help from http://javatechig.com/android/android-radio-button-example -->
+   	<RadioGroup
+   	    android:id="@+id/busyList"
+   	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/busyTitle">
+        
+        	<RadioButton 
+        	    android:id="@+id/washingHair"
+        	    android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="washing my hair"
+        		/>
+        	
+        	<RadioButton
+        	    android:id="@+id/dishes"
+        	    android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="doing the dishes" 
+        	    />
+        	<RadioButton
+        	    android:id="@+id/laundry"
+        	    android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="doing the laundry" 
+        	    />
+		</RadioGroup>
+</RelativeLayout>
